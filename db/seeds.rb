@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'faker'
+
+#Create RegisteredApplications
+
+10.times do 
+  RegisteredApplication.create!(
+  name: Faker::App.name,
+  url: Faker::Internet.url
+   )
+  end 
+
+  registeredapplications = RegisteredApplication.all
+
+
+  puts "Seeds finished"
+  puts "#{RegisteredApplication.count} registeredapplications created"

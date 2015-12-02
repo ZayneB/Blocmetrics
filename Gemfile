@@ -59,3 +59,6 @@ gem 'devise'
 
 #sets up environment variables for storing sensitve data
 gem 'figaro'
+
+gem 'faker'
+
